@@ -5,6 +5,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(240, 237, 229);
     color: white;
@@ -75,7 +78,185 @@ nav ul li a:hover::after{
     margin-right: 5%;
     font-size: 20px;
 }
-.fab{
+.header .fab{
     color: white;
     margin-left: 10px;
+}
+
+/* About Section */
+.about{
+    height: 80vh;
+}
+.aboutme{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    flex-wrap: wrap;
+    height: 60vh;
+    margin-left: 20vw;
+    border: 2px solid #9C5E3F;
+}
+.aboutimage{
+    flex-basis: 50%;
+    height: 100%;
+}
+.aboutimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-text{
+    flex-basis: 50%;
+    height: 100%;
+    font-family: 'tinos';
+    background: #ffffff;
+}
+.about-text h1{
+    margin-top: 15vh;
+    margin-left: 20px;
+    color:#9C5E3F;
+    font-size: 30px;
+}
+.about-text p{
+    font-size: 20px;
+    color: gray;
+    text-align: justify;
+    margin: 20px 20px;
+}
+
+/* Services Section */
+.services{
+    margin-top: 5vh;
+}
+.services h1{
+    text-align: center;
+    color: #9C5E3F;
+}
+.service{
+    height: fit-content;
+}
+.myservices{
+    height: fit-content;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+.service{
+    flex-basis: 30%;
+    margin: 10px 10px;
+    padding: 5px;
+}
+.service:hover{
+    border: 1px solid #9C5E3F;
+}
+.service img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.service-text{
+    bottom: 10px;
+}
+.service h2{
+    color: #9C5E3F;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.service p{
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* contact */
+.contact{
+    height: 80vh;
+    display: block;
+    margin-top: 5vh;
+}
+.follow{
+    height: 10vh;
+}
+.contact p{
+    text-align: center;
+    color: #9C5E3F;
+}
+.contact h2{
+    text-align: center;
+    color: black;
+}
+.contact .images{
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    object-fit: cover;
+    padding: 0;
+}
+.info{
+    background: #9C5E3F;
+    height: 35vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.handles{
+    flex-basis: 30%;
+}
+.handles h1{
+    color: white;
+    text-align: left;
+}
+.handles .fab{
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin: 10px 10vw;
+}
+.email {
+    flex-basis: 30%;
+}
+.email h1{
+    color: white;
+    text-align: left;
+}
+.email form input{
+    width: 60%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.email form input[type="text"]{
+    color: black;
+    border: none;
+    padding: 5px;
+    height: 10vh;
+}
+.email button{
+    background: #fc2b6d;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+}
+.location{
+    flex-basis: 30%;
+}
+.location h1{
+    color: white;
+    text-align: left;
+}
+.location p{
+    color: white;
+    text-align: left;
+}
+footer h3{
+    background: #9C5E3F;
+    text-align: center;
 }
