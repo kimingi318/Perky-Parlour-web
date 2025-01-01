@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -81,6 +81,12 @@ nav ul li a:hover::after{
 .header .fab{
     color: white;
     margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.header .fab:hover{
+    color: #fc2b6d;
+    font-size: 30px;
+    transform: translate(scale(1.2));
 }
 
 /* About Section */
@@ -94,7 +100,7 @@ nav ul li a:hover::after{
     align-items: center;
     width: 60vw;
     flex-wrap: wrap;
-    height: 60vh;
+    height: 75vh;
     margin-left: 20vw;
     border: 2px solid #9C5E3F;
 }
@@ -118,12 +124,16 @@ nav ul li a:hover::after{
     margin-left: 20px;
     color:#9C5E3F;
     font-size: 30px;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 .about-text p{
     font-size: 20px;
     color: gray;
     text-align: justify;
     margin: 20px 20px;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 
 /* Services Section */
@@ -133,6 +143,14 @@ nav ul li a:hover::after{
 .services h1{
     text-align: center;
     color: #9C5E3F;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
+}
+.services p{
+    text-align: center;
+    color: gray;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 .service{
     height: fit-content;
@@ -167,11 +185,15 @@ nav ul li a:hover::after{
     color: #9C5E3F;
     font-size: 20px;
     margin-top: 10px;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 .service p{
     color: gray;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 
 /* contact */
@@ -185,16 +207,29 @@ nav ul li a:hover::after{
 }
 .contact p{
     text-align: center;
-    color: #9C5E3F;
+    color: #9C5E3F;  
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
-.contact h2{
+.contact h2 {
     text-align: center;
     color: black;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
+}
+.contact h2 a{
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.contact h2 a:hover{
+    font-size: 20px;
 }
 .contact .images{
     display: flex;
     justify-content: center;
-    height: 35vh;
+    height: 30vh;
+    width: 100vw;
     object-fit: cover;
     padding: 0;
 }
@@ -216,7 +251,13 @@ nav ul li a:hover::after{
     display: inline-block;
     color: white;
     font-size: 25px;
-    margin: 10px 10vw;
+    margin: 10px 10px;
+    transition: all 0.2s ease-in-out;
+}
+.handles .fab:hover{
+    color: #fc2b6d;
+    font-size: 30px;
+    transform: translate(scale(1.2));
 }
 .email {
     flex-basis: 30%;
@@ -235,6 +276,11 @@ nav ul li a:hover::after{
     border: none;
     padding: 5px;
     height: 10vh;
+    transition: all 0.2s ease-in-out;
+}
+.email form input:hover{
+    border: 2px solid #000000;
+    transform: scale(0.5.1);
 }
 .email button{
     background: #fc2b6d;
@@ -244,19 +290,31 @@ nav ul li a:hover::after{
     width: 30%;
     height: 30px;
     margin-top: 10px;
+    transition: all 0.2s ease-in-out;
 }
+.email button:hover{
+    background: #9C5E3F;
+    border: 2px solid #fc2b6d;
+    transform: scale(1.1);
+}
+
 .location{
     flex-basis: 30%;
 }
 .location h1{
     color: white;
     text-align: left;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 .location p{
     color: white;
     text-align: left;
+    font-family: "PT Serif" ,"Tinos", serif;
+    font-style: normal;
 }
 footer h3{
     background: #9C5E3F;
     text-align: center;
+    font-family: "Noto Serif", serif;
 }

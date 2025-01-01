@@ -32,7 +32,7 @@
                 </div>
                 <div class="icons">
                     <a href="#"><i class="fab fa-facebook" title="facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"title="Instagram"></i></a>
+                    <a href="https://www.instagram.com/perks_glamour/profilecard/?igsh=MTI2dzl5aGg0dmI1YQ==" target="_blank"><i class="fab fa-instagram"title="Instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"title="Twitter"></i></a>
                 </div>
             </div>
@@ -43,11 +43,11 @@
     <div class="about" id="About">
         <div class="container aboutme">
             <div class="aboutimage">
-                <img src="perkyimages/makeup-3.jpg" alt="Perry Wanjiku.The one behind the brush">
+                <img src="perkyimages/picture1.jpg" alt="Perry Wanjiku.The one behind the brush">
             </div>
             <div class="about-text">
                 <h1>About Me</h1>
-                <p>My name is Perpetual, I am a professional makeup artist with over 5 years of experience.
+                <p>My name is Perry, I am a professional makeup artist with over 2 years of experience.
                      I am passionate about my work and I love to make my clients feel beautiful and confident.
                       I specialize in bridal makeup, editorial makeup, and special events.
                        I use high-quality products to ensure that my clients look and feel their best.
@@ -61,10 +61,11 @@
 
     <div class="services" id="Services">
         <h1>My Services</h1>
+        <p>Here are some of the services I offer. If you have any questions or would like to book an appointment, please feel free to contact me.</p>
         <div class="container myservices">
             <div class="service">
                 <div class="service-image">
-                    <img src="perkyimages/makeup-1.jpg" alt="">
+                    <img src="perkyimages/picture2.jpg" alt="">
                 </div>
                 <div class="service-text">
                     <h2>Bridal Makeup</h2>
@@ -90,7 +91,6 @@
                 </div>
             </div>
         </div>
-        <h1>Nails</h1>
         <div class="container myservices">
             <div class="service">
                 <div class="service-image">
@@ -115,7 +115,7 @@
             </div>
             <div class="service">
                 <div class="service-image">
-                    <img src="perkyimages/nails-3.jpg" alt="">
+                    <img src="perkyimages/nails-3.png" alt="">
                 </div>
                 <div class="service-text">
                     <h2>Gel & Acrylic Nails</h2>
@@ -130,32 +130,32 @@
         <footer class="contact" id="Contact">
             <div class="follow">
                 <p>FOLLOW US</p>
-                <H2>@perks</H2>
+                <H2><a href="https://www.instagram.com/perks_glamour/profilecard/?igsh=MTI2dzl5aGg0dmI1YQ==" target="_blank">@perks</a></H2>
             </div>
             <div class="images">
-                <!-- <img src="perkyimages/hairdressing-1.png" alt=""> -->
                 <img src="perkyimages/nails-1.jpg" alt="">
                 <img src="perkyimages/makeup-1.jpg" alt="">
-                <!-- <img src="perkyimages/nails-2.jpg" alt=""> -->
+                <img src="perkyimages/nails-2.jpg" alt="">
                 <img src="perkyimages/makeup-2.jpg" alt="">
-                <img src="perkyimages/nails-3.jpg" alt="">
+                <img src="perkyimages/nails-3.png" alt="">
                 <img src="perkyimages/makeup-3.jpg" alt="">
                 <img src="perkyimages/nails-4.jpg" alt="">
+                <img src="perkyimages/hairdressing-1.png" alt="">
             </div>
             <div class="info">
                 <div class="handles">
-                    <h1>reach me on:</h1>
-                    <a href="#"><i class="fab fa-facebook" title="facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
-                    <a href=""><i class="fa-brands fab fa-whatsapp" title="Whatsapp"></i></a>
+                    <h1>Reach me on:</h1>
+                    <a href="#" target="_blank"><i class="fab fa-facebook" title="facebook"></i></a>
+                    <a href="https://www.instagram.com/perks_glamour/profilecard/?igsh=MTI2dzl5aGg0dmI1YQ==" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
+                    <a href="https://wa.me/+254745200929" target="_blank"><i class="fa-brands fab fa-whatsapp" title="Whatsapp"></i></a>
                 </div>
                 <div class="email">
                     <h1>Email me</h1>
                     <form action="">
-                        <input type="email" placeholder="Enter your email"><br>
-                        <input type="text" placeholder="Enter your message"><br>
-                        <button type="submit">Send</button>
+                        <input type="email" id="email" placeholder="Enter your email"><br>
+                        <input type="text" id="message" placeholder="Enter your message"><br>
+                        <button type="submit" onclick="sendmail()">Send</button>
                     </form>
                 </div>
                 <div class="location">
@@ -166,5 +166,14 @@
             </div>
             <h3>Designed by KimingiTechnologies</h3>
         </footer>
+
+
+
+        <script>
+            function sendmail(params) {
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+                window.location.href = "mailto:perrykaggia1@gmail.com?subject=Message from " + encodeURIComponent(email) + "&body=" + encodeURIComponent(message);}
+        </script>
 </body>
 </html>
