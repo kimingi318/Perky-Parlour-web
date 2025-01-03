@@ -26,6 +26,10 @@ nav{
     background-color: #9C5E3F;
     height: 50px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 nav img{
     height: 80px;
@@ -47,14 +51,17 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #fc2b6d;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition:all 0.3s;
 }
 nav ul li a:hover::after{
     width: 100%;
+}
+.header{
+    margin-top:50px;
 }
 .headline{
     margin-top: 20px;
@@ -62,18 +69,22 @@ nav ul li a:hover::after{
     justify-content: space-between;
 }
 .logo{
-    margin-left: 5%;
-}
-.logo img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    width: 300px;
+    height: 100px;
+    background:url('perkyimages/icon-01.png');
+    background-position: center;
+    background-size: cover;
 }
 .header-text{
     margin-top: 0;
     text-align: center;
     font-family: 'tinos';
 }
+.header p{
+    margin-top:35%;
+    font-size: 20px;
+}
+
 .icons{
     margin-right: 5%;
     font-size: 20px;
@@ -194,11 +205,12 @@ nav ul li a:hover::after{
     margin-top: 10px;
     font-family: "PT Serif" ,"Tinos", serif;
     font-style: normal;
+    text-align: left;
 }
 
 /* contact */
 .contact{
-    height: 80vh;
+    height: fit-content;
     display: block;
     margin-top: 5vh;
 }
@@ -235,7 +247,8 @@ nav ul li a:hover::after{
 }
 .info{
     background: #9C5E3F;
-    height: 35vh;
+    height: fit-content;
+    padding: 20px;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
@@ -313,8 +326,14 @@ nav ul li a:hover::after{
     font-family: "PT Serif" ,"Tinos", serif;
     font-style: normal;
 }
-footer h3{
+footer{
+    margin: 0;
+    height: 100px;
+    padding: 1rem;
     background: #9C5E3F;
+}
+footer h3{
     text-align: center;
+    font-size: 20px;
     font-family: "Noto Serif", serif;
 }
